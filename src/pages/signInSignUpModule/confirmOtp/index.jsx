@@ -110,6 +110,7 @@ const ConfirmOtp = (props) => {
       },
       otpPinContainer: {
         backgroundColor: "#f7f7fc",
+        // backgroundColor: "aqua",
         padding: "16px 0",
         borderRadius: "20px",
         boxSizing: "border-box",
@@ -139,6 +140,7 @@ const ConfirmOtp = (props) => {
         border: "none",
         color: "#2A5583",
         backgroundColor: "#f7f7fc",
+        // borderRight: "1px solid red",
         textAlign: "left",
         font: "normal normal 600 20px/26px Nunito",
         letterSpacing: "0px",
@@ -151,6 +153,11 @@ const ConfirmOtp = (props) => {
       pinInputFocus: {
         outline: "none",
         // backgroundColor: "#fff",
+      },
+      otpSeperator: {
+        border: "1px solid #fff",
+        height: "25px",
+        boxSizing: "border-box"
       },
       resendOtpText: {
         margin: "32px 0 0 0",
@@ -365,6 +372,7 @@ const ConfirmOtp = (props) => {
               })}
               inputStyle={clsx(classes.eachInput)}
               focusStyle={clsx(classes.pinInputFocus)}
+              separator={<div className={clsx(classes.otpSeperator)}></div>}
             />
             <Typography className={clsx(classes.invalidOtpText)}>
               {otpError ? "Invalid OTP" : ""}
