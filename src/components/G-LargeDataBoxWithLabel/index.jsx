@@ -155,7 +155,7 @@ const GLargeDataBoxWithLabel = (props) => {
           disableUnderline: true,
         }}
         name={name !== undefined && name}
-        value={value !== undefined && value}
+        value={value !== undefined ? value : ""}
         placeholder={placeholder !== undefined && placeholder}
         onChange={(e) => onChange !== undefined && onChange(e)}
         error={error !== undefined && error}
