@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import CTabA from "../../components/CTabA";
-import tabData from "./tabData.js";
+import tabData from "../../components/allDefaults/tabData.js";
 
 const OtherComponent = () => {
   const [activeTab, setActiveTab] = useState("Maths");
   return (
     <div>
-      <CTabA data={tabData} activeTab={activeTab} setActiveTab={setActiveTab} />
+      <CTabA
+        data={tabData}
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+      />
     </div>
   );
 };

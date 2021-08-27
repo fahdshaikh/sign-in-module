@@ -3,6 +3,7 @@ import { Router, Switch, Route, Redirect } from "react-router-dom";
 import history from "./history.js";
 
 import OtherComponent from "./pages/otherPage";
+import OtherPage2 from "./pages/otherPage2/index.jsx";
 
 import UsernameLogin from "./pages/signInSignUpModule/usernameLogin";
 import ForgotPassword from "./pages/signInSignUpModule/forgotPassword";
@@ -23,6 +24,11 @@ export default class Routes extends Component {
             path="/plufo-india-otherPage"
             component={() => <OtherComponent />}
           />
+          <Route
+            path="/plufo-india-otherPage2"
+            component={() => <OtherPage2 />}
+          />
+          
           <Route
             path="/plufo-india-login"
             component={() => <UsernameLogin />}
