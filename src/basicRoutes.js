@@ -12,7 +12,6 @@ import VerifyOtp from "./pages/signInSignUpModule/verifyOtp/index.jsx";
 import ConfirmOtp from "./pages/signInSignUpModule/confirmOtp/index.jsx";
 
 export default class Routes extends Component {
-
   render() {
     return (
       <Router history={history}>
