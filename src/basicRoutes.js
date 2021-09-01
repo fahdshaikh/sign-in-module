@@ -11,48 +11,49 @@ import ResetPassword from "./pages/signInSignUpModule/resetPassword";
 import Registration from "./pages/signInSignUpModule/registration";
 import VerifyOtp from "./pages/signInSignUpModule/verifyOtp/index.jsx";
 import ConfirmOtp from "./pages/signInSignUpModule/confirmOtp/index.jsx";
+import Blog from "./pages/blog/index.jsx";
 
 export default class Routes extends Component {
   render() {
     return (
       <Router history={history}>
         <Switch>
-          <Route exact path="/">
-            <Redirect to="/plufo-india-login" />
+          <Route exact path='/'>
+            <Redirect to='/plufo-india-login' />
           </Route>
           <Route
-            path="/plufo-india-otherPage"
+            path='/plufo-india-otherPage'
             component={() => <OtherComponent />}
           />
           <Route
-            path="/plufo-india-otherPage2"
+            path='/plufo-india-otherPage2'
             component={() => <OtherPage2 />}
           />
-          
           <Route
-            path="/plufo-india-login"
+            path='/plufo-india-login'
             component={() => <UsernameLogin />}
           />
           <Route
-            path="/plufo-india-forgotPassword"
+            path='/plufo-india-forgotPassword'
             component={() => <ForgotPassword />}
           />
           <Route
-            path="/plufo-india-resetPassword"
+            path='/plufo-india-resetPassword'
             component={() => <ResetPassword />}
           />
           <Route
-            path="/plufo-india-registration"
+            path='/plufo-india-registration'
             component={() => <Registration />}
           />
           <Route
-            path="/plufo-india-verifyOtp"
+            path='/plufo-india-verifyOtp'
             component={() => <VerifyOtp />}
           />
           <Route
-            path="/plufo-india-confirmOtp"
+            path='/plufo-india-confirmOtp'
             component={() => <ConfirmOtp />}
           />
+          <Route path='/blog' component={() => <Blog />} />
         </Switch>
       </Router>
     );

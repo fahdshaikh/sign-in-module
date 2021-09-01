@@ -1,0 +1,217 @@
+.blog__mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f7f7fc 0% 0% no-repeat padding-box;
+  .sectionTitleDiv {
+    margin: 0 0 18px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    @media (max-width: 400px) {
+      margin: 0 0 10px 0;
+    }
+    .sectionTitle {
+      text-align: left;
+      font: normal normal 900 40px/60px Nunito;
+      letter-spacing: 0px;
+      color: #2a5583;
+      text-transform: capitalize;
+      opacity: 1;
+      @media (max-width: 400px) {
+        font: normal normal 900 30px/60px Nunito;
+      }
+    }
+    .dash {
+      height: 0;
+      flex-grow: 1;
+      border: 3px solid #2a5583;
+      border-radius: 5px;
+      margin-left: 10px;
+    }
+  }
+
+  .dBlogContainer2 {
+    margin: 0 0 20px 0;
+    width: 505px;
+    height: 177px;
+    border: 2px dashed darkgray;
+    @media (max-width: 400px) {
+      margin: 0 0 16px 0;
+      width: 341px;
+      height: 132px;
+    }
+  }
+  .row1__mainContainer {
+    margin: 30px 0 0 0;
+    display: flex;
+    @media (max-width: 400px) {
+      margin: 32px 0 0 0;
+      flex-direction: column;
+    }
+    .row1__bigCard {
+      margin: 0 16px 0 0;
+      width: 1088px;
+      height: 831px;
+      border: 2px solid red;
+      @media (max-width: 400px) {
+        margin: 0 0 16px 0;
+        width: 348px;
+        height: 274px;
+      }
+    }
+    .row1__medCardContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      @media (max-width: 400px) {
+        width: 348px;
+        flex-direction: row;
+      }
+      .row1__medCard {
+        width: 527px;
+        height: 410px;
+        border: 2px dashed blue;
+        @media (max-width: 400px) {
+          width: 166px;
+          height: 173px;
+        }
+      }
+    }
+  }
+  .row2__mainContainer {
+    margin: 48px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 400px) {
+      margin: 16px 0 0 0;
+      flex-direction: column;
+    }
+    .row2__smallCardContainer {
+      display: flex;
+      flex-direction: column;
+    }
+    .row2__popularStoriesContainer {
+      margin: 0 35px 0 0;
+      width: 1088px;
+      @media (max-width: 400px) {
+        margin: 0;
+        width: 348px;
+      }
+      .popularStories__content {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 400px) {
+          flex-direction: column;
+        }
+        .row2__bigCard {
+          // margin: 0 16px 0 0;
+          width: 530px;
+          height: 795px;
+          border: 2px solid red;
+          @media (max-width: 400px) {
+            // margin: 0 0 16px 0;
+            width: 348px;
+            height: 522px;
+          }
+        }
+      }
+    }
+    .row2__mostReadsContainer {
+      width: 552px;
+      @media (max-width: 400px) {
+        width: 348px;
+      }
+    }
+  }
+  .row3__mainContainer {
+    margin: 78px 0 0 0;
+    // width: 1920px;
+    width: 100%;
+    // height: 986px;
+    background: #8e4e9f 0% 0% no-repeat padding-box;
+    opacity: 1;
+    @media (max-width: 400px) {
+      margin: 16px 0 0 0;
+    }
+    .row3__content {
+      margin: 90px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 400px) {
+        margin: 16px 0;
+        flex-direction: column;
+      }
+      .row3__bigCard {
+        margin: 0 30px 0 0;
+        width: 798px;
+        height: 778px;
+        border: 2px solid red;
+        @media (max-width: 400px) {
+          margin: 0 0 16px 0;
+          width: 348px;
+          height: 274px;
+        }
+      }
+      .row3__medCardContainer {
+        width: 812px;
+        height: 850px;
+        display: flex;
+        // flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 400px) {
+          width: 348px;
+          height: auto;
+          flex-direction: row;
+        }
+        .row3__medCard {
+          width: 398px;
+          height: 359px;
+          border: 2px dashed green;
+          @media (max-width: 400px) {
+            margin: 0 0 16px;
+            width: 348px;
+            height: 205px;
+          }
+        }
+      }
+    }
+  }
+  .row4__mainContainer {
+    margin: 30px 0 0 0;
+    display: flex;
+    @media (max-width: 400px) {
+      margin: 32px 0 0 0;
+      flex-direction: column;
+    }
+  }
+  .row5__mainContainer {
+    margin: 66px 0 93px 0;
+    width: 1673px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 400px) {
+      margin: 32px 0 0 0;
+      width: 348px;
+    }
+    .row5__content {
+      display: flex;
+      flex-wrap: wrap;
+      // justify-content: space-evenly;
+      .dBlogContainer1 {
+        margin: 0 16px 53px 0;
+        width: 398px;
+        height: 407px;
+        border: 2px dashed green;
+        @media (max-width: 400px) {
+          margin: 0 0 16px;
+          width: 348px;
+          height: 245px;
+        }
+      }
+    }
+  }
+}
